@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia · Week14</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>✨ Ritsumeikan · ISE</h1>
+    </header>
+
+    <!-- MENU BAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="trivia.html" class="nav-link">Trivia</a>
+    </nav>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar-left">
+            <h3>📚 Useful links</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT: TRIVIA (BMI calculator) -->
+        <main class="main-content" id="mainContent">
+            <h2>🧠 Trivia · BMI Calculator</h2>
+            <div class="trivia-box">
+                <p>Enter your height and weight to compute BMI and category.</p>
+                <div class="bmi-form">
+                    <label for="heightCm">Height (cm)</label>
+                    <input type="number" id="heightCm" placeholder="e.g. 175" min="1" step="0.1">
+
+                    <label for="weightKg">Weight (kg)</label>
+                    <input type="number" id="weightKg" placeholder="e.g. 70" min="1" step="0.1">
+
+                    <button id="bmiCalcBtn">Calculate BMI</button>
+                </div>
+                <div id="bmiResult" class="bmi-result">
+                    <span id="bmiValue">—</span>
+                    <span id="bmiCategory">—</span>
+                </div>
+                <p class="bmi-note">Underweight &lt; 18.5 · Normal 18.5–24.9 · Overweight 25–29.9 · Obese ≥ 30</p>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR: contact form (same) -->
+        <aside class="sidebar-right">
+            <h3>📬 Contact</h3>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="3" placeholder="Write a note..." required></textarea>
+
+                <button type="submit" id="contactSubmit">Send</button>
+                <span id="formFeedback" class="form-feedback"></span>
+            </form>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span>© 2026 · Created: July 14, 2026</span>
+        <span class="footer-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://blog.example.com/" target="_blank">Blog</a>
+        </span>
+    </footer>
+</body>
+</html>

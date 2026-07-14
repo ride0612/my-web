@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site · Week14</title>
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external JS (defer) -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- ====== HEADER ====== -->
+    <header class="header">
+        <h1>✨ Ritsumeikan · ISE</h1>
+    </header>
+
+    <!-- ====== MENU BAR ====== -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="trivia.html" class="nav-link">Trivia</a>
+    </nav>
+
+    <!-- ====== MAIN WRAPPER (sidebar left + content + sidebar right) ====== -->
+    <div class="main-wrapper">
+
+        <!-- LEFT SIDEBAR: useful links -->
+        <aside class="sidebar-left">
+            <h3>📚 Useful links</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT (page-specific) -->
+        <main class="main-content" id="mainContent">
+            <!-- content loaded via JS or static; we put homepage by default -->
+            <h2>👋 Hello, I'm JIN Zenghao</h2>
+            <div class="home-intro">
+                <img src="https://placehold.co/300x200/3b82f6/white?text=Tech+Interests" alt="Tech interests" class="home-img">
+                <p>
+                    I'm a student at Ritsumeikan University, passionate about web development, 
+                    AI, and human-centered design. My goal is to build accessible digital tools 
+                    that make life easier. Outside of tech, I enjoy photography, hiking, and 
+                    reading sci-fi novels.
+                </p>
+            </div>
+            <p style="margin-top:1rem; color:#475569;">✨ This is my homepage — feel free to explore my portfolio and try the trivia!</p>
+        </main>
+
+        <!-- RIGHT SIDEBAR: contact form with validation -->
+        <aside class="sidebar-right">
+            <h3>📬 Contact</h3>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="3" placeholder="Write a note..." required></textarea>
+
+                <button type="submit" id="contactSubmit">Send</button>
+                <span id="formFeedback" class="form-feedback"></span>
+            </form>
+        </aside>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <span>© 2026 · Created: July 14, 2026</span>
+        <span class="footer-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://blog.example.com/" target="_blank">Blog</a>
+        </span>
+    </footer>
+</body>
+</html>
